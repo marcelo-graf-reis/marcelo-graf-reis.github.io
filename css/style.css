@@ -230,7 +230,7 @@ height:200px;
 
 }
 
-@media all and (max-width:800px){
+@media all and (max-width:1300px){
     .box{
         display: block;
         width:80%;
@@ -257,6 +257,10 @@ height:200px;
 
 
 @media all and (max-width:500px){
+    body{
+        max-width: 100%;
+    }
+
     .box{
         display: block;
         width:80%;
