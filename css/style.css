@@ -216,6 +216,10 @@ height:200px;
     margin-bottom: 10%;
 }
 
+#cv{
+    color: #000;
+}
+
 @media all and (max-width:1080px){
       #indice{ 
         padding-top: 3%;
