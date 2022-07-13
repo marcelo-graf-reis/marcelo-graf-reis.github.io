@@ -1,0 +1,267 @@
+@font-face {
+    font-family: fonte;
+    src: url(../fonts/Akzidenz-grotesk-roman.ttf);
+    
+  }
+
+@font-face {
+    font-family: fonteL;
+    src: url(../fonts/Akzidenz-grotesk-light.ttf);
+   
+  }
+
+@font-face {
+    font-family: fonteB;
+    src: url(../fonts/Akzidenz-grotesk-bold.ttf);
+    
+  }
+
+@font-face {
+    font-family: fonteBlack;
+    src: url(../fonts/Akzidenz-grotesk-black.ttf);
+    
+  }
+
+  a{
+    font-family: fonte, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+  }
+
+  a:hover{
+    color: rgb(255, 0, 0);
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+
+body {
+    
+    background-color: #fff;
+    color:#000;
+    font-family: fonte, sans-serif;
+    text-rendering:optimizeLegibility;
+}
+
+h1{
+    font-size: 50px;
+    font-family: fonteL, sans-serif;
+    letter-spacing: 0.1vw;
+}
+
+h4{
+    font-size: 25px;
+    font-family: fonte, sans-serif;
+    letter-spacing: 0.1vw;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+    margin: 0% 4%;
+    width: 90%;
+    
+}
+
+
+
+#indice{
+    min-height: 100%;
+    padding: 2% 2%;
+    background-color: #000;
+    position: fixed;
+    width: 20%;
+    text-indent: 10%;
+    top:0%;
+    right:0;
+    text-align: justify;
+    
+    transform: translateX(85%);
+    z-index: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#indice:hover{
+    
+    transform: translateX(0%);
+    transition: all 0.5s ease-in-out;
+}
+
+#indice:hover a{
+    color: rgb(255, 255, 255);   
+    transition: all 0.5s ease-in-out;
+}
+
+#indice a:hover{
+    color: red;
+}
+
+#indice h2{
+   color: #fff;
+}
+
+#index{
+    color: #fff;
+    position: fixed;
+    top:2%;
+    right:1%;
+    z-index: 2;
+    pointer-events: none;
+    transform: rotate(90deg);
+    transition: all 0.5s ease-in-out;
+}
+
+#indice:hover + #index{
+    transform: rotate(0deg);
+    transition: all 0.5s ease-in-out;
+}
+
+ul{
+    list-style-type:none;
+}
+
+li{
+    margin:5% 0%;
+    
+}
+
+.space{
+    height:200px;
+}
+
+.textInicio{
+    width:70%;
+    margin: auto;
+    text-indent: 3%;
+}
+
+
+.navButton{
+    
+    padding: 0% 1%;
+    background-color: #000;
+    color: #000;
+    left:0%;
+    position:fixed;
+    transform: translateX(-240px);
+    font-size: 15px;
+    transition: all 0.5s ease-in-out;
+    text-align: right;
+}
+
+.navButton:hover{
+    transform: translateX(0px);
+    opacity:1;
+    transition: all 0.5s ease-in-out;
+}
+
+.navButton:hover a{
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+.box{
+    margin:0% 2% 2% 2%;
+    padding: 6% 0% 6% 0%;
+    display: flex;
+    align-items:center; 
+    justify-content:center;
+    gap:2vw; 
+}
+
+.box a{
+    color: #777;
+    transition: all 0.3s ease-in-out;
+}
+
+.box a:hover{
+    color: #000;
+}
+
+.txtContainer{
+    width:45vw;
+    opacity: 0;
+    
+    transform: translateX(-30px);
+    transition: all 0.5s ease-in-out;
+}
+
+img{ 
+    height: 600px;
+    width: auto;
+}
+
+.txtContainer img{
+height:200px;
+}
+
+
+.box:hover > .txtContainer{
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s ease-in-out;
+}
+
+.p5js {
+    position: fixed;
+}
+
+.cvBox{
+    width:80%;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+@media all and (max-width:800px){
+    .box{
+        display: block;
+        width:80%;
+    }
+
+    .txtContainer{
+        opacity: 1;
+        width: auto;
+        transform: translateX(0px);
+    }
+
+    #indice{ 
+        padding-top: 3%;
+        padding-right: 10%;
+        width: 35%;  
+        z-index: 2;
+    }
+
+    #indice h2{
+        font-size: 15px;
+    }
+
+}
+
+
+@media all and (max-width:500px){
+    .box{
+        display: block;
+        width:80%;
+    }
+
+    .txtContainer{
+        opacity: 1;
+        width: auto;
+        transform: translateX(0px);
+    }
+
+    #indice{ 
+        padding-top: 15%;
+        padding-right: 10%;
+        width: 60%;  
+        z-index: 2;
+    }
+
+    #indice h2{
+        font-size: 15px;
+    }
+}
+
