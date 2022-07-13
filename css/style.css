@@ -231,6 +231,7 @@ height:200px;
 }
 
 @media all and (max-width:1300px){
+    
     .box{
         display: block;
         width:80%;
@@ -244,9 +245,13 @@ height:200px;
 
     #indice{ 
         padding-top: 3%;
-        padding-right: 10%;
+        padding-right: 2%;
         width: 35%;  
         z-index: 2;
+    }
+
+    #indice p{
+        font-size: 1vw;
     }
 
     #indice h2{
